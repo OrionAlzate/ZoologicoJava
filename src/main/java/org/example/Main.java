@@ -18,9 +18,17 @@ public class Main {
         pato.setNombre("Pablo");
         System.out.println("Hola, mi nombre es "+pato.getNombre());
         Familia familia = new Familia();
-        familia.nombrePapa = "Manuel";
-        System.out.println("Mi nombre es " + familia.nombrePapa+ " Y soy el papá");
-        pato.edad=10;
+        // familia.nombrePapa = "Manuel";
+        // System.out.println("Mi nombre es " + familia.nombrePapa+ " Y soy el papá");
+        // pato.edad=10;
+
+        familia.setNombrePapa("Charlie");
+        familia.setNombreMama("Gaby");
+        familia.setEdadDelPapa(600);
+        System.out.println("La edad del papa es: "+ familia.getEdadDelPapa());
+        System.out.println("En nombre de la mama es: "+ familia.getNombreMama());
+        System.out.println("El nombre del papa es: " + familia.getEdadDelPapa());
+
 
 
 

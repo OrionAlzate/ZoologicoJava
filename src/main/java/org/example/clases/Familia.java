@@ -39,4 +39,17 @@ public class Familia {
     public void setNombreDelHijo(String nombreDelHijo) {
         this.nombreDelHijo = nombreDelHijo;
     }
+
+    public Integer getEdadDelPapa() {
+        return edadDelPapa;
+    }
+
+    public void setEdadDelPapa(Integer edadDelPapa) {
+        if (edadDelPapa < 0 || edadDelPapa > 20) {
+            System.out.println("La edad no es permitida, esta muy viejo");
+        } else {
+            this.edadDelPapa = edadDelPapa;
+        }
+
+    }
 }
